@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
+    <title>Eun-Gyo Lee's Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/1b6a314525.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./img/Profile.jpg" alt="Profile" class="profile" />
+      <h1 class="title">이은교 (Eun-Gyo Lee)</h1>
+      <p class="introduce">
+        저는 프로그래머가 되기 위해 노력하는 학생 이은교입니다.<br />
+        저는 주로 웹, 프론트엔드 개발을 합니다.
+      </p>
+      <p class="email">Email : vlstpt812@gmail.com</p>
+      <div class="icons">
+        <a href="https://github.com/eungyolee" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100025765211896"
+          target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+    </div>
+    <div class="main">
+      <h2 class="title">프로젝트</h2>
+      <p class="projects-status">제작 완료된 프로젝트</p>
+      <div class="finished-projects">
+        <div class="projects">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/paintjs.PNG" alt="paintJS" />
+                  <h1>paintJS</h1>
+                  <p>HTML, CSS, JS로 만든 간단한 그림 그리기 사이트입니다.</p>
+                  <button
+                    onclick="window.open('https://eungyolee.github.io/paintJS')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/nextcountrytest.PNG" />
+                  <h1>Next Country Test</h1>
+                  <p>
+                    HTML과 Python으로 만든 다음 생에 어느 나라 사람으로 태어날지
+                    알려주는 사이트입니다.
+                  </p>
+                  <button
+                    onclick="window.open('https://country-type.herokuapp.com/')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/noom.PNG" />
+                  <h1>Noom</h1>
+                  <p>
+                    Node.js와 WebRTC, WebSocket을 사용해 만든 줌 클론 코딩
+                    프로젝트입니다.
+                  </p>
+                  <button
+                    onclick="window.open('https://github.com/eungyolee/Noom')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/momentum.PNG" />
+                  <h1>Momentum</h1>
+                  <p>HTML, CSS, JS로 만든 Momentum 클론 코딩 프로젝트입니다.</p>
+                  <button
+                    onclick="window.open('https://eungyolee.github.io/momentum_clone/')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/blockchain.PNG" />
+                  <h1>Blockchain</h1>
+                  <p>Typescript로 구현한 블록체인입니다.</p>
+                  <button
+                    onclick="window.open('https://github.com/eungyolee/blockchain')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+      <p class="projects-status">제작 중인 프로젝트</p>
+      <div class="progressing-projects">
+        <div class="projects">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/ramentimer.PNG" alt="paintJS" />
+                  <h1>Ramen Timer</h1>
+                  <p>HTML, CSS, JS로 만든 라면 끓이는 시간 타이머 사이트입니다.</p>
+                  <button
+                    onclick="window.open('https://eungyolee.github.io/ramen-timer/')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./img/exam.PNG" />
+                  <h1>역사 문제 사이트</h1>
+                  <p>
+                    HTML, CSS, JS로 만든 역사 시험 범위 문제 사이트입니다. 현재 동양사만 구현되어 있습니다.
+                  </p>
+                  <button
+                    onclick="window.open('https://eungyolee.github.io/exam/index.html')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: "auto",
+          spaceBetween: 50,
+          loop: true,
+          centeredSlides: true,
+          speed: 1000,
+          direction: "horizontal",
+        });
+      </script>
+    </div>
+    <div class="footer">
+      <h1 class="title">개발 능력</h1>
+      <div class="langs_and_skills">
+        <p class="description">개발 언어와 기술</p>
+        <center>
+          <img src="https://img.shields.io/badge/-HTML-F05032.svg?&style=for-the-badge&logo=HTML5&logoColor=white" alt="HTML" class="skill">
+          <img src="https://img.shields.io/badge/-CSS-007ACC.svg?&style=for-the-badge&logo=CSS3&logoColor=white" alt="CSS" class="skill">
+          <img src="https://img.shields.io/badge/-JavaScript-F7DF1E.svg?&style=for-the-badge&logo=Javascript&logoColor=white" alt="JavaScript" class="skill">
+          <img src="https://img.shields.io/badge/-TypeScript-3178C6.svg?&style=for-the-badge&logo=Typescript&logoColor=white" alt="TypeScript" class="skill"><br />
+          <img src="https://img.shields.io/badge/-Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white" alt="Python" class="skill">
+          <img src="https://img.shields.io/badge/-C%20Lang-A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=white" alt="C Language" class="skill">
+          <img src="https://img.shields.io/badge/-Nodejs-43853d.svg?&style=for-the-badge&logo=Node.js&logoColor=white" alt="Node.js" class="skill">
+          <img src="https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=white" alt="React" class="skill"><br />
+          <img src="https://img.shields.io/badge/-Nextjs-000000.svg?style=for-the-badge&logo=Next.js&logoColor=white" alt="Next.js" class="skill">
+          <img src="https://img.shields.io/badge/-Unity-FFFFFF.svg?style=for-the-badge&logo=Unity&logoColor=white" alt="Unity" class="skill">
+          <img src="https://img.shields.io/badge/-Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white" alt="Git" class="skill">
+          <img src="https://img.shields.io/badge/-GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white" alt="GitHub" class="skill"><br />
+          <img src="https://img.shields.io/badge/-Netlify-00C7B7.svg?&style=for-the-badge&logo=Netlify&logoColor=white" alt="Netlify" class="skill">
+          <img src="https://img.shields.io/badge/-Heroku-430098.svg?&style=for-the-badge&logo=Heroku&logoColor=white" alt="Heroku" class="skill">
+          <img src="https://img.shields.io/badge/-Firebase-FFCA28.svg?&style=for-the-badge&logo=Firebase&logoColor=white" alt="Firebase" class="skill">
+        </center>
+      </div>
+      <div class="tools">
+        <p class="description">개발 도구</p>
+        <center>
+          <img src="https://img.shields.io/badge/-VS%20Code-007ACC.svg?&style=for-the-badge&logo=VisualStudioCode&logoColor=white" alt="Visual Studio Code" class="skill">
+          <img src="https://img.shields.io/badge/-Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=VisualStudio&logoColor=white" alt="Visual Studio" class="skill">
+          <img src="https://img.shields.io/badge/-IntelliJ-000000.svg?style=for-the-badge&logo=IntelliJIDEA&logoColor=white" alt="IntelliJ IDEA" class="skill">
+          <img src="https://img.shields.io/badge/-PyCharm-000000.svg?style=for-the-badge&logo=PyCharm&logoColor=white" alt="PyCharm" class="skill">
+        </center>
+      </div>
+      <hr>
+      <p class="copyright"></p>
+      <script>
+        var copyright = document.querySelector(".copyright");
+        var time = new Date;
+        copyright.innerText = `Copyright ${time.getFullYear()}. 이은교 all rights reserved.`
+      </script>
+    </div>
+  </body>
+</html>
+<!-- 782167918452146176 -->
