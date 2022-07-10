@@ -108,10 +108,8 @@ i {
 
 .inner {
   border-radius: 20px;
-
   background: #191919;
   color: white;
-
   width: 35%;
 }
 
@@ -122,16 +120,11 @@ i {
 .inner button {
   width: 50%;
   height: 50px;
-
   font-size: 1.2em;
-
   background-color: white;
   color: #191919;
-
   border-radius: 10px;
-
   margin-top: 1%;
-
   margin-bottom: 5%;
 }
 
