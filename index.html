@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=`, initial-scale=1.0" />
     <title>Eun-Gyo Lee's Portfolio</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/1b6a314525.js"
       crossorigin="anonymous"
@@ -19,7 +23,7 @@
   <body>
     <div class="header">
       <img src="./image/Profile.jpg" alt="Profile" class="profile" />
-      <h1 class="title">이은교 (Eun-Gyo Lee)</h1>
+      <h1 class="title animate_animated animate__fadeInDown">이은교 (Eun-Gyo Lee)</h1>
       <p class="introduce">
         저는 프로그래머가 되기 위해 노력하는 학생 이은교입니다.<br />
         저는 주로 웹, 프론트엔드 개발을 합니다.
@@ -37,7 +41,7 @@
       </div>
     </div>
     <div class="main">
-      <h2 class="title">프로젝트</h2>
+      <h2 class="title animate_animated animate__fadeInDown">프로젝트</h2>
       <p class="projects-status">제작 완료된 프로젝트</p>
       <div class="finished-projects">
         <div class="projects">
@@ -145,6 +149,20 @@
                   </button>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="inner">
+                  <img src="./image/ymgng-wiki.PNG" />
+                  <h1>염경위키</h1>
+                  <p>
+                    HTML, CSS, JS와 Firebase를 사용하여 만든 간단한 염경중학교 위키입니다.
+                  </p>
+                  <button
+                    onclick="window.open('https://history-exam.netlify.app')"
+                  >
+                    이동하기
+                  </button>
+                </div>
+              </div>
             </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -168,7 +186,7 @@
       </script>
     </div>
     <div class="footer">
-      <h1 class="title">개발 능력</h1>
+      <h1 class="title animate_animated animate__fadeInDown">개발 능력</h1>
       <div class="langs_and_skills">
         <p class="description">개발 언어와 기술</p>
         <center>
@@ -206,6 +224,7 @@
         copyright.innerText = `Copyright ${time.getFullYear()}. 이은교 all rights reserved.`
       </script>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
   </body>
 </html>
 <!-- 782167918452146176 -->
