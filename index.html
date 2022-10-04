@@ -113,125 +113,211 @@
                   </button>
                 </div>
               </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-      <p class="projects-status">제작 중인 프로젝트</p>
-      <div class="progressing-projects">
-        <div class="projects">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="inner">
-                  <img src="./image/ramentimer.PNG" alt="paintJS" />
-                  <h1>Ramen Timer</h1>
-                  <p>HTML, CSS, JS로 만든 라면 끓이는 시간 타이머 사이트입니다.</p>
-                  <button
-                    onclick="window.open('https://eungyolee.github.io/ramen-timer/')"
-                  >
-                    이동하기
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inner">
-                  <img src="./image/exam.PNG" />
-                  <h1>역사 문제 사이트</h1>
-                  <p>
-                    HTML, CSS, JS로 만든 역사 시험 범위 문제 사이트입니다. 현재 동양사만 구현되어 있습니다.
-                  </p>
-                  <button
-                    onclick="window.open('https://history-exam.netlify.app')"
-                  >
-                    이동하기
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inner">
-                  <img src="./image/ymgng-wiki.PNG" />
-                  <h1>염경위키</h1>
-                  <p>
-                    HTML, CSS, JS와 Firebase를 사용하여 만든 간단한 염경중학교 위키입니다.
-                  </p>
-                  <button
-                    onclick="window.open('https://yeomgyeong-wiki.web.app')"
-                  >
-                    이동하기
-                  </button>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="inner">
-                  <img src="./image/edcan-lang.PNG" />
-                  <h1>EDCAN 언어</h1>
-                  <p>
-                    SSF를 기념하여 만든 엄준식 언어를 본딴 EDCAN 언어 사이트입니다.
-                  </p>
-                  <button
-                    onclick="window.open('https://github.com/eungyolee/edcan-language')"
-                  >
-                    이동하기
-                  </button>
-                </div>
-              </div>
             </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
+        <p class="projects-status">제작 중인 프로젝트</p>
+        <div class="progressing-projects">
+          <div class="projects">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ramentimer.PNG" alt="paintJS" />
+                    <h1>Ramen Timer</h1>
+                    <p>
+                      HTML, CSS, JS로 만든 라면 끓이는 시간 타이머 사이트입니다.
+                    </p>
+                    <button
+                      onclick="window.open('https://eungyolee.github.io/ramen-timer/')"
+                    >
+                      이동하기
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/exam.PNG" />
+                    <h1>역사 문제 사이트</h1>
+                    <p>
+                      HTML, CSS, JS로 만든 역사 시험 범위 문제 사이트입니다.
+                      현재 동양사만 구현되어 있습니다.
+                    </p>
+                    <button
+                      onclick="window.open('https://history-exam.netlify.app')"
+                    >
+                      이동하기
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/ymgng-wiki.PNG" />
+                    <h1>염경위키</h1>
+                    <p>
+                      HTML, CSS, JS와 Firebase를 사용하여 만든 간단한 염경중학교
+                      위키입니다.
+                    </p>
+                    <button
+                      onclick="window.open('https://yeomgyeong-wiki.web.app')"
+                    >
+                      이동하기
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="inner">
+                    <img src="./image/edcan-lang.PNG" />
+                    <h1>EDCAN 언어</h1>
+                    <p>
+                      SSF를 기념하여 만든 엄준식 언어를 본딴 EDCAN 언어
+                      사이트입니다.
+                    </p>
+                    <button
+                      onclick="window.open('https://github.com/eungyolee/edcan-language')"
+                    >
+                      이동하기
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            slidesPerView: "auto",
+            spaceBetween: 50,
+            loop: true,
+            centeredSlides: true,
+            speed: 1000,
+            direction: "horizontal",
+          });
+        </script>
       </div>
-      </div>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          slidesPerView: "auto",
-          spaceBetween: 50,
-          loop: true,
-          centeredSlides: true,
-          speed: 1000,
-          direction: "horizontal",
-        });
-      </script>
     </div>
     <div class="footer">
       <h1 class="title">개발 능력</h1>
       <div class="langs_and_skills">
         <p class="description">개발 언어와 기술</p>
         <center>
-          <img src="https://img.shields.io/badge/-HTML-F05032.svg?&style=for-the-badge&logo=HTML5&logoColor=white" alt="HTML" class="skill">
-          <img src="https://img.shields.io/badge/-CSS-007ACC.svg?&style=for-the-badge&logo=CSS3&logoColor=white" alt="CSS" class="skill">
-          <img src="https://img.shields.io/badge/-JavaScript-F7DF1E.svg?&style=for-the-badge&logo=Javascript&logoColor=white" alt="JavaScript" class="skill">
-          <img src="https://img.shields.io/badge/-TypeScript-3178C6.svg?&style=for-the-badge&logo=Typescript&logoColor=white" alt="TypeScript" class="skill"><br />
-          <img src="https://img.shields.io/badge/-Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white" alt="Python" class="skill">
-          <img src="https://img.shields.io/badge/-C%20Lang-A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=white" alt="C Language" class="skill">
-          <img src="https://img.shields.io/badge/-Nodejs-43853d.svg?&style=for-the-badge&logo=Node.js&logoColor=white" alt="Node.js" class="skill">
-          <img src="https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=white" alt="React" class="skill"><br />
-          <img src="https://img.shields.io/badge/-Nextjs-000000.svg?style=for-the-badge&logo=Next.js&logoColor=white" alt="Next.js" class="skill">
-          <img src="https://img.shields.io/badge/-Unity-000000.svg?style=for-the-badge&logo=Unity&logoColor=white" alt="Unity" class="skill">
-          <img src="https://img.shields.io/badge/-Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white" alt="Git" class="skill">
-          <img src="https://img.shields.io/badge/-GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white" alt="GitHub" class="skill"><br />
-          <img src="https://img.shields.io/badge/-Netlify-00C7B7.svg?&style=for-the-badge&logo=Netlify&logoColor=white" alt="Netlify" class="skill">
-          <img src="https://img.shields.io/badge/-Heroku-430098.svg?&style=for-the-badge&logo=Heroku&logoColor=white" alt="Heroku" class="skill">
-          <img src="https://img.shields.io/badge/-Firebase-FFCA28.svg?&style=for-the-badge&logo=Firebase&logoColor=white" alt="Firebase" class="skill">
-          <img src="https://img.shields.io/badge/-Vuejs-4FC08D.svg?&style=for-the-badge&logo=Vue.js&logoColor=white" alt="Vue.js" class="skill">
+          <img
+            src="https://img.shields.io/badge/-HTML-F05032.svg?&style=for-the-badge&logo=HTML5&logoColor=white"
+            alt="HTML"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-CSS-007ACC.svg?&style=for-the-badge&logo=CSS3&logoColor=white"
+            alt="CSS"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-JavaScript-F7DF1E.svg?&style=for-the-badge&logo=Javascript&logoColor=white"
+            alt="JavaScript"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-TypeScript-3178C6.svg?&style=for-the-badge&logo=Typescript&logoColor=white"
+            alt="TypeScript"
+            class="skill"
+          /><br />
+          <img
+            src="https://img.shields.io/badge/-Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white"
+            alt="Python"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-C%20Lang-A8B9CC.svg?&style=for-the-badge&logo=C&logoColor=white"
+            alt="C Language"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Nodejs-43853d.svg?&style=for-the-badge&logo=Node.js&logoColor=white"
+            alt="Node.js"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=white"
+            alt="React"
+            class="skill"
+          /><br />
+          <img
+            src="https://img.shields.io/badge/-Nextjs-000000.svg?style=for-the-badge&logo=Next.js&logoColor=white"
+            alt="Next.js"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Unity-000000.svg?style=for-the-badge&logo=Unity&logoColor=white"
+            alt="Unity"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"
+            alt="Git"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"
+            alt="GitHub"
+            class="skill"
+          /><br />
+          <img
+            src="https://img.shields.io/badge/-Netlify-00C7B7.svg?&style=for-the-badge&logo=Netlify&logoColor=white"
+            alt="Netlify"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Heroku-430098.svg?&style=for-the-badge&logo=Heroku&logoColor=white"
+            alt="Heroku"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Firebase-FFCA28.svg?&style=for-the-badge&logo=Firebase&logoColor=white"
+            alt="Firebase"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Vuejs-4FC08D.svg?&style=for-the-badge&logo=Vue.js&logoColor=white"
+            alt="Vue.js"
+            class="skill"
+          />
         </center>
       </div>
       <div class="tools">
         <p class="description">개발 도구</p>
         <center>
-          <img src="https://img.shields.io/badge/-VS%20Code-007ACC.svg?&style=for-the-badge&logo=VisualStudioCode&logoColor=white" alt="Visual Studio Code" class="skill">
-          <img src="https://img.shields.io/badge/-Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=VisualStudio&logoColor=white" alt="Visual Studio" class="skill">
-          <img src="https://img.shields.io/badge/-IntelliJ-000000.svg?style=for-the-badge&logo=IntelliJIDEA&logoColor=white" alt="IntelliJ IDEA" class="skill">
-          <img src="https://img.shields.io/badge/-PyCharm-000000.svg?style=for-the-badge&logo=PyCharm&logoColor=white" alt="PyCharm" class="skill">
+          <img
+            src="https://img.shields.io/badge/-VS%20Code-007ACC.svg?&style=for-the-badge&logo=VisualStudioCode&logoColor=white"
+            alt="Visual Studio Code"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=VisualStudio&logoColor=white"
+            alt="Visual Studio"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-IntelliJ-000000.svg?style=for-the-badge&logo=IntelliJIDEA&logoColor=white"
+            alt="IntelliJ IDEA"
+            class="skill"
+          />
+          <img
+            src="https://img.shields.io/badge/-PyCharm-000000.svg?style=for-the-badge&logo=PyCharm&logoColor=white"
+            alt="PyCharm"
+            class="skill"
+          />
         </center>
       </div>
-      <hr>
+      <hr />
       <p class="copyright">Copyright 2022. 이은교 all rights reserved.</p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
